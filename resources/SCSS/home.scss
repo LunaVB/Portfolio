@@ -4,6 +4,10 @@ body {
     padding: 0px;
 }
 
+.highlight {
+    background-color: rgb(87, 91, 121);
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -19,7 +23,7 @@ body {
 
 .nav-item {
     color: #C3C5D5;
-    margin: 2px 50px 2px 2px;
+    margin: 5px 50px 0px 20px;
     padding-bottom: 5px;
 }
 
@@ -33,8 +37,85 @@ body {
     width: 100vw;
 }
 
+.bg-txt {
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    max-width: 75%;
+    padding-top: 25%;
+    color: #BEC1D2;
+}
+
 .accent-bar {
     height: 25px;
+    width: 100%;
+    background-color: #4A4F6B;
+}
+
+// ---------------------------------------
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    color: #CCCFE0;
+}
+
+.about {
+    height: auto;
+    width: 100%;
+    background-color: #797FA1;
+}
+
+.about-txt {
+    height: auto;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+// ---------------------------------------
+.project-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 550px;
+    width: 100%;
+    background-color: #37393F;
+}
+
+.project {
+    height: 400px;
+    width: 33%;
+    margin: 40px 5px 20px 5px;
+}
+
+.project-img {
+    width: 100%;
+    height: 75%;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.219);
+    // background-image: url(../images/placeholder.JPG);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+.project-descr {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 5px 0px 5px 0px;
+    background-color: rgba(255, 255, 255, 0.568);
+    font-size: 25px;
+}
+
+// ---------------------------------------
+.footer-bar {
+    height: 50px;
     width: 100%;
     background-color: #4A4F6B;
 }

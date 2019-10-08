@@ -2,6 +2,7 @@ body {
   background-color: #37393F;
   margin: 0px;
   padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .highlight {
@@ -37,12 +38,12 @@ body {
 }
 
 .bg-txt {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   margin: auto;
   max-height: 75%;
   max-width: 75%;
-  padding-top: 45%;
+  padding-top: 28%;
   color: #BEC1D2;
 }
 
@@ -53,6 +54,7 @@ body {
 }
 
 h2 {
+  font-family: "Josefin Slab", serif;
   text-align: center;
   font-size: 35px;
   padding: 10px 0px 10px 0px;
@@ -121,6 +123,12 @@ h2 {
 }
 
 .footer-content {
+  margin-left: 40%;
+  margin-right: 40%;
+  max-width: 80%;
+}
+
+.footer-items {
   height: 60%;
   width: 30px;
   padding-top: 10px;

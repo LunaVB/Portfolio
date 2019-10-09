@@ -14,6 +14,11 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .top-bg {
   background-image: url(../images/BG2.jpg);
   background-repeat: no-repeat;
@@ -44,14 +49,22 @@ body {
 .nav {
   width: 100%;
   height: 25px;
-  margin-top: 200px;
+  margin-top: 190px;
   color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+
+.nav-txt {
   font-size: 25px;
   font-family: "Josefin Sans", serif;
+  border-bottom: 1px solid black;
+}
+.nav-txt:hover {
+  transition: 0.8s;
+  border-bottom: 1px solid white;
 }
 
 .accent-bar {
@@ -64,24 +77,37 @@ h2 {
   font-family: "Josefin Slab", serif;
   text-align: center;
   font-size: 35px;
-  padding: 10px 0px 10px 0px;
-  margin: 0px;
+  padding-top: 50px;
+  margin-bottom: 25px;
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
   color: #CCCFE0;
+  border-bottom: 1px solid black;
+}
+h2:hover {
+  transition: 0.8s;
+  border-bottom: 1px solid white;
 }
 
 .about {
   height: auto;
-  width: 100%;
-  background-color: #797FA1;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 1px solid white;
+  color: #656872;
 }
 
 .about-txt {
   height: auto;
-  max-width: 90%;
+  max-width: 100%;
   text-align: center;
-  margin: auto;
-  padding-bottom: 20px;
   font-size: 25px;
+}
+.about-txt:hover {
+  transition: 0.8s;
+  color: rgba(255, 255, 255, 0.767);
 }
 
 .project-cont {
@@ -92,7 +118,7 @@ h2 {
   height: 600px;
   width: 100%;
   padding-bottom: 20%;
-  color: #37393F;
+  color: #656872;
 }
 
 .project {
@@ -106,10 +132,11 @@ h2 {
   width: 100%;
   height: 75%;
   margin: 5px;
-  background-color: rgba(255, 255, 255, 0.219);
+  border: 1px solid white;
 }
 .project-img:hover {
-  background-color: rgba(255, 255, 255, 0.603);
+  transition: 0.8s;
+  background-color: rgba(255, 255, 255, 0.767);
 }
 
 .project-descr {
@@ -117,8 +144,12 @@ h2 {
   height: auto;
   margin: 5px;
   padding: 5px 0px 5px 0px;
-  background-color: rgba(255, 255, 255, 0.568);
   font-size: 20px;
+}
+.project-descr:hover {
+  transition: 0.8s;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.767);
 }
 
 @media only screen and (max-width: 599px) {
@@ -138,8 +169,11 @@ h2 {
 }
 .footer-bar {
   height: 50px;
-  width: 100%;
-  background-color: #4A4F6B;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 20px;
+  border: 1px solid white;
 }
 
 .footer-content {
@@ -156,6 +190,10 @@ h2 {
   padding-right: 50px;
   padding-top: 10px;
   color: #BEC1D2;
+}
+.footer-items:hover {
+  transition: 0.5s;
+  color: white;
 }
 
 .txt-cont {

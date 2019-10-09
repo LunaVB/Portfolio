@@ -44,7 +44,7 @@ body {
     margin: auto;
     max-height: 75%;
     max-width: 75%;
-    padding-top: 28%;
+    padding-top: 20%;
     color: #BEC1D2;
 }
 
@@ -87,7 +87,8 @@ h2 {
     justify-content: center;
     height: 600px;
     width: 100%;
-    background-color: #37393F;
+    padding-bottom: 20%;
+    color: #37393F;
 }
 
 .project {
@@ -123,17 +124,22 @@ h2 {
 @media only screen and (max-width: 768px) {
     .project-cont {
         flex-direction: column;
-        height: auto;
+        flex-wrap: nowrap;
+        justify-content: flex;
+        height: 1900px;
+        width: 95%;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .project {
         height: 500px;
-        width: 100%;
-        margin: 20px 5px 20px 5px;
+        width: 95%;
+        padding-bottom: 150px;
     }
 
     .project-img {
-        margin: 20px 5px 20px 5px;
+        background-color: rgba(255, 255, 255, 0.603);
     }
 }
 

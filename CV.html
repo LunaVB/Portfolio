@@ -8,22 +8,86 @@
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/CSS/main.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
-<header>
-    <div class="nav">
-        <a class="nav-item">Home</a>
-        <a class="nav-item">About</a>
-        <a class="nav-item">Projects</a>
-        <a class="nav-item">CV</a>
-        <span class="iconify nav-item" data-icon="fa:bars" data-inline="false"></span>
-    </div>
-</header>
 
 <body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active" onclick="scrollHome()">Home</a>
+
+            <a href="#about" onclick="scrollAbout()">About</a>
+            <a href="#projects" onclick="scrollProjects()">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <span class="iconify" data-icon="fa:bars" data-inline="false"></span>
+            </a>
+        </div>
+
+    </header>
+    <!----------------------------------------------------------->
     <div class="top-bg">
+        <div class="bg-txt">About
+
+            <div class="txt-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quos architecto dicta,
+                aliquam rem quam, perferendis tenetur ex labore earum veniam totam reprehenderit ullam! Id nostrum
+                provident
+                perferendis! Excepturi, autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque
+                culpa, porro quos placeat, repudiandae exercitationem ratione dicta libero eum numquam nemo eaque?
+                Accusamus, eos eligendi? Praesentium dolore maxime beatae?</div>
+        </div>
     </div>
-    <div class="accent-bar"></div>
+    <!----------------------------------------------------------->
+    <div class="txt-cont">
+        <h2 class="cv-title">Languages</h2>
+        <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos debitis
+            molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
+            similique corporis. Recusandae!</a>
+
+        <h2 class="cv-title">Skills</h2>
+        <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolorum perspiciatis ab quaerat? Eum velit eos
+            facilis maxime, mollitia perferendis, perspiciatis ea dicta architecto voluptate assumenda qui eligendi nisi
+            reprehenderit.</a>
+    </div>
+    <div class="lets-connect">
+        <span class="highlight-cv">Let's</span>
+        <span class="highlight-cv">connect;</span>
+
+
+    </div>
+    <!----------------------------------------------------------->
+    <footer>
+        <div class="footer-bar">
+            <div class="footer-content">
+                <span class="iconify footer-items" data-icon="fa:github" data-inline="false"></span>
+                <span class="iconify footer-items" data-icon="fa:stack-overflow" data-inline="false"></span>
+                <span class="iconify footer-items" data-icon="fa:envelope" data-inline="false"></span>
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    // ----------------------------------
+    function scrollHome() {
+        window.scrollTo(0, 0);
+    }
+    // ----------------------------------
+    function scrollAbout() {
+        window.scrollTo(0, 1050);
+    }
+    // ----------------------------------
+    function scrollProjects() {
+        window.scrollTo(0, 1330);
+    }
+</script>
 
 </html>

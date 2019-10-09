@@ -122,19 +122,19 @@ h2 {
 
 // ---------------------------------------PROJECTS MOBILE VIEW
 @media only screen and (max-width: 768px) {
+
+
     .project-cont {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex;
         height: 1900px;
-        width: 95%;
-        margin-left: 5px;
-        margin-right: 5px;
+        width: auto;
     }
 
     .project {
         height: 500px;
-        width: 95%;
+        width: 90%;
         padding-bottom: 150px;
     }
 

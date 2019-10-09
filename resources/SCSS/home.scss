@@ -119,6 +119,24 @@ h2 {
     font-size: 25px;
 }
 
+// ---------------------------------------PROJECTS MOBILE VIEW
+@media only screen and (max-width: 768px) {
+    .project-cont {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project {
+        height: 500px;
+        width: 100%;
+        margin: 20px 5px 20px 5px;
+    }
+
+    .project-img {
+        margin: 20px 5px 20px 5px;
+    }
+}
+
 // ---------------------------------------
 .footer-bar {
     height: 50px;
@@ -131,15 +149,15 @@ h2 {
 }
 
 .footer-content {
-    margin-left: 40%;
-    margin-right: 40%;
-    max-width: 80%;
+    margin-left: 45%;
+    margin-right: 45%;
+    min-width: 50%;
 }
 
 .footer-items {
     height: 60%;
-    width: 30px;
+    min-width: 30px;
     padding-top: 10px;
-    padding-right: 30px;
+    padding-right: 0px;
     color: #BEC1D2;
 }

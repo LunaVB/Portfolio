@@ -29,6 +29,11 @@ a {
     background-color: #2F4D6F;
 }
 
+.overflow-check {
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
 
 // ---------------------------------------
 .top-bg {
@@ -41,11 +46,11 @@ a {
 }
 
 .ship {
-    height: auto;
-    width: auto;
-    margin-left: 49%;
-    margin-right: 49%;
-    margin-top: 3%;
+    max-height: 40%;
+    max-width: 80%;
+    margin-left: 49vw;
+    margin-right: 49vw;
+    margin-top: 10vh;
 }
 
 .bg-txt {
@@ -58,39 +63,37 @@ a {
     color: #BEC1D2;
 }
 
-// ---------------------------------------BG MOBILE VIEW
-@media only screen and (max-width: 769px) {
-    .top-bg {
-        background-image: url(../images/BG.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .ship {
-        display: none;
+// --------------------------------------------------------------------BG MOBILE VIEW
+@media only screen and (min-width: 1920px) {
+    .bg-txt {
+        font-size: 50px;
+        margin-bottom: 30px;
     }
 }
 
+@media only screen and (min-width: 2400px) {
+    .bg-txt {
+        font-size: 65px;
+        margin-bottom: 30px;
+    }
+}
 
 // ---------------------------------------
 .nav {
     width: 100%;
-    height: 25px;
-    margin-top: 10%;
+    height: 100%;
+    margin-top: 25vh;
     color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    position: absolute;
 }
 
 .nav-txt {
     font-size: 25px;
     font-family: 'Josefin Sans', serif;
-    border-bottom: 1px solid black;
 
     &:hover {
         transition: 0.3s;
@@ -98,10 +101,16 @@ a {
     }
 }
 
-// ---------------------------------------PROJECTS MOBILE VIEW
-@media only screen and (max-width: 769px) {
-    .nav {
-        margin-top: 500px;
+// --------------------------------------------------------------------PROJECTS MOBILE VIEW
+@media only screen and (min-width: 1920px) {
+    .nav-txt {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .nav-txt {
+        font-size: 40px;
     }
 }
 
@@ -117,12 +126,7 @@ h2 {
     font-family: 'Josefin Slab', serif;
     text-align: center;
     font-size: 35px;
-    padding-top: 1%;
-    width: 30%;
-    padding-left: 35%;
-    padding-right: 35%;
-    margin-bottom: 0px;
-    padding-bottom: 20px;
+    width: 100%;
     color: #CCCFE0;
 
     &:hover {
@@ -134,10 +138,10 @@ h2 {
     // background-color: #2F4D6F;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 5%;
-    padding-bottom: 20px;
+    margin-bottom: 5vh;
+    padding-bottom: 10vh;
     height: auto;
     width: 100%;
     color: #CCCFE0;
@@ -147,9 +151,6 @@ h2 {
 .about {
     height: 80%;
     width: 30%;
-    height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .about-img {
@@ -158,40 +159,52 @@ h2 {
     background-position: center center;
     background-size: contain;
     height: auto;
-    width: 40%;
-
+    width: 20%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .about-txt {
     height: auto;
-    width: 70%;
+    width: 80%;
     font-size: 25px;
-    padding-right: 75px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-// ---------------------------------------ABOUT MOBILE VIEW
-@media only screen and (max-width: 769px) {
-    .about-cont {
-        height: auto;
-    }
-
+// --------------------------------------------------------------------ABOUT MOBILE VIEW
+@media only screen and (max-width: 768px) {
     .about-img {
-        display: none;
-    }
-
-    .about {
-        height: auto;
-        max-width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        background-color: black;
+        display: block;
     }
 
     .about-txt {
-        height: auto;
-        max-width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .about-txt {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    h2 {
+        font-size: 60px;
+    }
+
+    .about-txt {
+        font-size: 40px;
     }
 }
 
@@ -200,29 +213,24 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    height: 600px;
-    width: 100%;
-    padding-bottom: 2%;
+    width: 90%;
     color: rgb(164, 166, 173);
-    // background-image: url(../images/rocket.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-size: cover;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5vh;
 }
 
 .project {
-    height: auto;
-    width: 30%;
-    margin: 20px 5px 20px 5px;
-    padding-bottom: 15%;
+    width: 100%;
+    margin: 10px;
 }
 
 .project-img {
     width: 100%;
-    height: 90%;
-    margin: 5px;
+    height: 40vh;
     border: 1px solid#2F4D6F;
+    margin-bottom: 2%;
+
 
     &:hover {
         transition: 0.3s;
@@ -233,9 +241,7 @@ h2 {
 .project-descr {
     width: 100%;
     height: auto;
-    margin: 5px;
-    padding: 5px 0px 5px 0px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 
     &:hover {
@@ -245,27 +251,47 @@ h2 {
     }
 }
 
-// ---------------------------------------PROJECTS MOBILE VIEW
-@media only screen and (max-width: 769px) {
+// --------------------------------------------------------------------PROJECTS MOBILE VIEW
+@media only screen and (max-width: 768px) {
     .project-cont {
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-start;
-        height: 1900px;
-        width: 100%;
     }
 
     .project {
-        height: 500px;
-        width: 95%;
-        margin-bottom: 25%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .project-img {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .project-descr {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .project-descr {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .project-descr {
+        font-size: 35px;
     }
 }
 
 // ---------------------------------------
 .footer-bar {
-    height: 50px;
-    width: 100%;
+    height: 5vh;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #2F4D6F;
 }
 
@@ -279,9 +305,9 @@ h2 {
 .footer-items {
     height: 100%;
     min-width: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     color: #BEC1D2;
 
     &:hover {
@@ -290,11 +316,44 @@ h2 {
     }
 }
 
-// ---------------------------------------FOOTER MOBILE VIEW
-@media only screen and (max-width: 769px) {
+// --------------------------------------------------------------------FOOTER MOBILE VIEW
+@media only screen and (max-width: 768px) {
     .footer-bar {
-        margin-top: 15%;
+        height: 5vh;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .footer-items {
+        margin-top: 1vh;
+        height: 3vh;
     }
 }
+
+@media only screen and (min-width: 1920px) {
+    .footer-bar {
+        height: 5vh;
+    }
+
+    .footer-items {
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .footer-bar {
+        height: 5vh;
+    }
+
+    .footer-items {
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
 
 // ---------------------------------------

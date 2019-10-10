@@ -19,6 +19,10 @@ a {
     color: white;
 }
 
+.black {
+    color: black;
+}
+
 
 // ---------------------------------------
 .top-bg {
@@ -115,21 +119,27 @@ h2 {
     margin-left: 35%;
     margin-right: 35%;
     color: #CCCFE0;
-    border-bottom: 1px solid black;
 
     &:hover {
         transition: 0.8s;
-        border-bottom: 1px solid white;
     }
 }
+
 
 .about {
     height: auto;
     max-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    border: 1px solid white;
-    color: rgb(101, 104, 114);
+    color: rgba(255, 255, 255, 0.473);
+    background-color: black;
+
+}
+
+.about-cont {
+    background-color: rgb(69, 109, 146);
+    padding-bottom: 100px;
+
 }
 
 .about-txt {
@@ -137,11 +147,7 @@ h2 {
     max-width: 100%;
     text-align: center;
     font-size: 25px;
-
-    &:hover {
-        transition: 0.8s;
-        color: rgba(255, 255, 255, 0.767);
-    }
+    background-color: rgb(69, 109, 146);
 }
 
 // ---------------------------------------ABOUT MOBILE VIEW
@@ -183,11 +189,11 @@ h2 {
     width: 100%;
     height: 75%;
     margin: 5px;
-    border: 1px solid white;
+    border: 1px solid rgb(69, 109, 146);
 
     &:hover {
         transition: 0.8s;
-        background-color: rgba(255, 255, 255, 0.589);
+        background-color: rgb(69, 109, 146);
     }
 }
 

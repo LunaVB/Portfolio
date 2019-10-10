@@ -19,6 +19,10 @@ a {
   color: white;
 }
 
+.black {
+  color: black;
+}
+
 .top-bg {
   background-image: url(../images/BG2.jpg);
   background-repeat: no-repeat;
@@ -102,11 +106,9 @@ h2 {
   margin-left: 35%;
   margin-right: 35%;
   color: #CCCFE0;
-  border-bottom: 1px solid black;
 }
 h2:hover {
   transition: 0.8s;
-  border-bottom: 1px solid white;
 }
 
 .about {
@@ -114,8 +116,13 @@ h2:hover {
   max-width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  border: 1px solid white;
-  color: #656872;
+  color: rgba(255, 255, 255, 0.473);
+  background-color: black;
+}
+
+.about-cont {
+  background-color: #456d92;
+  padding-bottom: 100px;
 }
 
 .about-txt {
@@ -123,10 +130,7 @@ h2:hover {
   max-width: 100%;
   text-align: center;
   font-size: 25px;
-}
-.about-txt:hover {
-  transition: 0.8s;
-  color: rgba(255, 255, 255, 0.767);
+  background-color: #456d92;
 }
 
 @media only screen and (max-width: 769px) {
@@ -165,11 +169,11 @@ h2:hover {
   width: 100%;
   height: 75%;
   margin: 5px;
-  border: 1px solid white;
+  border: 1px solid #456d92;
 }
 .project-img:hover {
   transition: 0.8s;
-  background-color: rgba(255, 255, 255, 0.589);
+  background-color: #456d92;
 }
 
 .project-descr {

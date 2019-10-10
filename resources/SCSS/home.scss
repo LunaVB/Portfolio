@@ -28,6 +28,7 @@ a {
     background-size: cover;
     height: 100vh;
     width: 100vw;
+
 }
 
 .ship {
@@ -47,6 +48,23 @@ a {
     padding-top: 20px;
     color: #BEC1D2;
 }
+
+// ---------------------------------------BG MOBILE VIEW
+@media only screen and (max-width: 769px) {
+    .top-bg {
+        background-image: url(../images/BG.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .ship {
+        display: none;
+    }
+}
+
 
 // ---------------------------------------
 .nav {
@@ -71,6 +89,13 @@ a {
     }
 }
 
+// ---------------------------------------PROJECTS MOBILE VIEW
+@media only screen and (max-width: 769px) {
+    .nav {
+        margin-top: 500px;
+    }
+}
+
 // ---------------------------------------
 .accent-bar {
     height: 25px;
@@ -86,9 +111,9 @@ h2 {
     font-size: 35px;
     padding-top: 50px;
     margin-bottom: 25px;
-    width: 10%;
-    margin-left: 45%;
-    margin-right: 45%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
     color: #CCCFE0;
     border-bottom: 1px solid black;
 
@@ -100,9 +125,9 @@ h2 {
 
 .about {
     height: auto;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     border: 1px solid white;
     color: rgb(101, 104, 114);
 }
@@ -119,9 +144,24 @@ h2 {
     }
 }
 
+// ---------------------------------------ABOUT MOBILE VIEW
+@media only screen and (max-width: 769px) {
+    .about {
+        height: auto;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about-txt {
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 // ---------------------------------------
 .project-cont {
-    // background-image: linear-gradient(to bottom, #000000 25%, #ffffff 100%);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -157,6 +197,7 @@ h2 {
     margin: 5px;
     padding: 5px 0px 5px 0px;
     font-size: 20px;
+    text-align: center;
 
     &:hover {
         transition: 0.8s;
@@ -166,7 +207,7 @@ h2 {
 }
 
 // ---------------------------------------PROJECTS MOBILE VIEW
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 769px) {
     .project-cont {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -189,7 +230,7 @@ h2 {
     margin-left: 40%;
     margin-right: 40%;
     margin-bottom: 20px;
-    border: 1px solid white;
+    padding-top: 5%;
 }
 
 .footer-content {
@@ -212,3 +253,12 @@ h2 {
         color: white;
     }
 }
+
+// ---------------------------------------FOOTER MOBILE VIEW
+@media only screen and (max-width: 769px) {
+    .footer-bar {
+        padding-top: 10%;
+    }
+}
+
+// ---------------------------------------

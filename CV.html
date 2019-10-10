@@ -12,31 +12,26 @@
 </head>
 
 <body>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="#home" class="active" onclick="scrollHome()">Home</a>
-
-            <a href="#about" onclick="scrollAbout()">About</a>
-            <a href="#projects" onclick="scrollProjects()">Projects</a>
-            <a href="#cv">CV</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <span class="iconify" data-icon="fa:bars" data-inline="false"></span>
-            </a>
-        </div>
-
-    </header>
     <!----------------------------------------------------------->
     <div class="top-bg">
-        <div class="bg-txt">About
-
-            <div class="txt-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quos architecto dicta,
-                aliquam rem quam, perferendis tenetur ex labore earum veniam totam reprehenderit ullam! Id nostrum
-                provident
-                perferendis! Excepturi, autem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, doloremque
-                culpa, porro quos placeat, repudiandae exercitationem ratione dicta libero eum numquam nemo eaque?
-                Accusamus, eos eligendi? Praesentium dolore maxime beatae?</div>
+        <div class="bg-txt animate fadeInUp one">Hi, I'm <span class="highlight">Luna</span></div>
+        <div class="bg-txt animate fadeInUp one">I'm a junior Web Dev at <span class="highlight">BeCode</span></div>
+        <img class="animate fadeIn two ship" src="./resources/images/shipsmall.png"></img>
+        <div class="nav">
+            <a class="nav-txt">Home</a>
+            <a class="nav-txt">About</a>
+            <a class="nav-txt">Languages</a>
+            <a class="nav-txt">Skills</a>
         </div>
     </div>
+    <!----------------------------------------------------------->
+    <div class="txt-cont blue-bg">
+        <h2 class="cv-title">About</h2>
+        <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos debitis
+            molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
+            similique corporis. Recusandae!</a>
+    </div>
+
     <!----------------------------------------------------------->
     <div class="txt-cont">
         <h2 class="cv-title">Languages</h2>
@@ -59,10 +54,11 @@
     <footer>
         <div class="footer-bar">
             <div class="footer-content">
-                <span class="iconify footer-items" data-icon="fa:github" data-inline="false"></span>
-                <span class="iconify footer-items" data-icon="fa:stack-overflow" data-inline="false"></span>
-                <span class="iconify footer-items" data-icon="fa:envelope" data-inline="false"></span>
-            </div>
+                <a class="iconify footer-items" data-icon="fa:github" data-inline="false"
+                    href="https://github.com/LunaVB"></a>
+                <a class="iconify footer-items" data-icon="brandico:linkedin-rect" data-inline="false"
+                    href="https://www.linkedin.com/in/lunavb/"></a>
+                <a class="iconify footer-items" data-icon="fa-solid:envelope" data-inline="false"></a></div>
         </div>
     </footer>
 

@@ -1,14 +1,27 @@
 .txt-cont {
     height: 60%;
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 5%;
-    background-color: rgba(128, 128, 128, 0.384);
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 5vh;
     font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.txt-img {
+    height: 60%;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 5%;
+    background-color: rgba(170, 165, 165, 0.384);
 }
 
 cv-title {
+    width: 100%;
     font-size: 30px;
     color: #BEC1D2;
     padding-top: 50px;
@@ -17,11 +30,32 @@ cv-title {
 
 .lets-connect {
     font-size: 75px;
-    width: 200px;
+    width: 300px;
     height: auto;
-    margin-left: 15%;
+    margin-left: 20vw;
+    padding-bottom: 3vh;
 }
 
 .highlight-cv {
-    background-color: gray;
+    background-color: #2F4D6F;
+}
+
+// --------------------------------------------------------------------ABOUT MOBILE VIEW
+
+@media only screen and (max-width: 768px) {
+    a {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    a {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    a {
+        font-size: 40px;
+    }
 }

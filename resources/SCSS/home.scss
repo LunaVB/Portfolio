@@ -6,6 +6,8 @@ body {
     background-color: #000000;
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -32,7 +34,6 @@ a {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-
 }
 
 .ship {
@@ -74,7 +75,7 @@ a {
 .nav {
     width: 100%;
     height: 25px;
-    margin-top: 190px;
+    margin-top: 10%;
     color: white;
     display: flex;
     flex-direction: row;
@@ -132,8 +133,6 @@ h2 {
     margin-left: 10%;
     margin-right: 10%;
     color: rgba(255, 255, 255, 0.473);
-    background-color: black;
-
 }
 
 .about-cont {
@@ -208,7 +207,7 @@ h2 {
     &:hover {
         transition: 0.8s;
         color: black;
-        background-color: rgba(255, 255, 255, 0.767);
+        background-color: rgba(155, 139, 139, 0.767);
     }
 }
 
@@ -232,11 +231,9 @@ h2 {
 // ---------------------------------------
 .footer-bar {
     height: 50px;
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 20px;
-    padding-top: 5%;
+    width: 100%;
+    margin-top: 5%;
+    background-color: rgb(69, 109, 146);
 }
 
 .footer-content {

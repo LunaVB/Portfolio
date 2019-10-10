@@ -105,7 +105,7 @@ a {
 .accent-bar {
     height: 25px;
     width: 100%;
-    background-color: rgb(69, 109, 146);
+    background-color: #2F4D6F;
 }
 
 
@@ -136,9 +136,17 @@ h2 {
 }
 
 .about-cont {
-    background-color: rgb(69, 109, 146);
-    padding-bottom: 100px;
+    background-color: #2F4D6F;
+    padding-bottom: 10%;
 
+}
+
+.about-img {
+    background-image: url(../images/comet.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: absolute;
 }
 
 .about-txt {
@@ -146,7 +154,8 @@ h2 {
     max-width: 100%;
     text-align: center;
     font-size: 25px;
-    background-color: rgb(69, 109, 146);
+    // background-color: #2F4D6F;
+
 }
 
 // ---------------------------------------ABOUT MOBILE VIEW
@@ -173,22 +182,27 @@ h2 {
     justify-content: center;
     height: 600px;
     width: 100%;
-    margin-bottom: 10%;
+    padding-top: 20%;
+    padding-bottom: 10%;
     color: rgb(101, 104, 114);
+    background-image: url(../images/rocket.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .project {
     height: auto;
     width: 30%;
     margin: 20px 5px 20px 5px;
-    padding-bottom: 100px;
+    padding-bottom: 15%;
 }
 
 .project-img {
     width: 100%;
     height: 75%;
     margin: 5px;
-    border: 1px solid rgb(69, 109, 146);
+    border: 1px solid#2F4D6F;
 
     &:hover {
         transition: 0.8s;
@@ -224,7 +238,6 @@ h2 {
     .project {
         height: 500px;
         width: 95%;
-        padding-bottom: 180px;
     }
 }
 
@@ -232,8 +245,7 @@ h2 {
 .footer-bar {
     height: 50px;
     width: 100%;
-    margin-top: 5%;
-    background-color: rgb(69, 109, 146);
+    background-color: #2F4D6F;
 }
 
 .footer-content {

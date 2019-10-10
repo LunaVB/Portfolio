@@ -25,6 +25,10 @@ a {
   color: black;
 }
 
+.blue-bg {
+  background-color: #2F4D6F;
+}
+
 .top-bg {
   background-image: url(../images/BG2.jpg);
   background-repeat: no-repeat;
@@ -102,42 +106,50 @@ h2 {
   font-family: "Josefin Slab", serif;
   text-align: center;
   font-size: 35px;
-  padding-top: 50px;
-  margin-bottom: 25px;
+  padding-top: 1%;
   width: 30%;
-  margin-left: 35%;
-  margin-right: 35%;
+  padding-left: 35%;
+  padding-right: 35%;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
   color: #CCCFE0;
 }
 h2:hover {
   transition: 0.8s;
 }
 
-.about {
-  height: auto;
-  max-width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  color: rgba(255, 255, 255, 0.473);
+.about-cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  padding-bottom: 20px;
+  height: 300px;
+  width: 100%;
+  color: #CCCFE0;
+  background-color: #2F4D6F;
 }
 
-.about-cont {
-  background-color: #2F4D6F;
-  padding-bottom: 10%;
+.about {
+  height: 80%;
+  width: 30%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .about-img {
-  background-image: url(../images/comet.png);
+  background-image: url(../images/moon.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center center;
   background-size: contain;
-  position: absolute;
 }
 
 .about-txt {
   height: auto;
-  max-width: 100%;
-  text-align: center;
+  max-width: 60%;
+  text-align: left;
   font-size: 25px;
 }
 
@@ -162,13 +174,8 @@ h2:hover {
   justify-content: center;
   height: 600px;
   width: 100%;
-  padding-top: 20%;
-  padding-bottom: 10%;
-  color: #656872;
-  background-image: url(../images/rocket.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  padding-bottom: 2%;
+  color: #a4a6ad;
 }
 
 .project {

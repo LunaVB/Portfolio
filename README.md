@@ -5,6 +5,9 @@ To do list :
 <li><s>basic layout</s>
 
 <b>Home page</b>
-<li>HOW DO COLORS WORK?! (Add a little bit)
-<li>Responsiveness (especially mobile)
+<li><s>HOW DO COLORS WORK?!<s>
+<li><S>Responsiveness<S>
 <li>fix...everything
+
+<b>CV</b>
+<li>Fuck

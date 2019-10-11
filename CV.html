@@ -18,32 +18,42 @@
         <div class="bg-txt animate fadeInUp one">I'm a junior Web Dev at <span class="highlight">BeCode</span></div>
         <img class="animate fadeIn two ship" src="./resources/images/shipsmall.png"></img>
         <div class="nav">
-            <a class="nav-txt">Home</a>
-            <a class="nav-txt">About</a>
-            <a class="nav-txt">Languages</a>
-            <a class="nav-txt">Skills</a>
+            <a class="nav-txt" href="home.html">Home</a>
+            <a href="#about2" class="nav-txt goToSection">About</a>
+            <a href="#languages" class="nav-txt goToSection">Languages</a>
+            <a href="#skills" class="nav-txt goToSection">Skills</a>
         </div>
     </div>
     <!----------------------------------------------------------->
-    <div class="txt-cont blue-bg">
-        <h2 class="cv-title">About</h2>
-        <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos debitis
-            molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
-            similique corporis. Recusandae!</a>
-    </div>
-
+    <section id="about2">
+        <div class="txt-cont blue-bg">
+            <h2 class="cv-title">About</h2>
+            <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos
+                debitis
+                molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
+                similique corporis. Recusandae!</a>
+        </div>
+    </section>
     <!----------------------------------------------------------->
-    <div class="txt-cont">
-        <h2 class="cv-title">Languages</h2>
-        <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos debitis
-            molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
-            similique corporis. Recusandae!</a>
-
-        <h2 class="cv-title">Skills</h2>
-        <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolorum perspiciatis ab quaerat? Eum velit eos
-            facilis maxime, mollitia perferendis, perspiciatis ea dicta architecto voluptate assumenda qui eligendi nisi
-            reprehenderit.</a>
-    </div>
+    <section id="languages">
+        <div class="txt-cont">
+            <h2 class="cv-title">Languages</h2>
+            <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos
+                debitis
+                molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
+                similique corporis. Recusandae!</a>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="txt-cont">
+            <h2 class="cv-title">Skills</h2>
+            <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolorum perspiciatis ab quaerat? Eum velit
+                eos
+                facilis maxime, mollitia perferendis, perspiciatis ea dicta architecto voluptate assumenda qui eligendi
+                nisi
+                reprehenderit.</a>
+        </div>
+    </section>
     <div class="lets-connect">
         <span class="highlight-cv">Let's</span>
         <span class="highlight-cv">connect;</span>
@@ -64,26 +74,11 @@
 
 </body>
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-    // ----------------------------------
-    function scrollHome() {
-        window.scrollTo(0, 0);
-    }
-    // ----------------------------------
-    function scrollAbout() {
-        window.scrollTo(0, 1050);
-    }
-    // ----------------------------------
-    function scrollProjects() {
-        window.scrollTo(0, 1330);
-    }
+    $(document).on('click', '.goToSection', function (e) {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('data-href')).offset().top
+        }, 700); //set second as required
+    })
 </script>
 
 </html>

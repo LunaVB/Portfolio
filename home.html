@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- <script src="res/js/scripts.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/CSS/main.css">
     <title>Portfolio</title>
@@ -31,70 +36,72 @@
         <div class="bg-txt animate fadeInUp one">I'm a junior Web Dev at <span class="highlight">BeCode</span></div>
         <img class="animate fadeIn two ship" src="./resources/images/shipsmall.png"></img>
         <div class="nav">
-            <a class="nav-txt">Home</a>
-            <a class="nav-txt">About</a>
-            <a class="nav-txt">Projects</a>
-            <a class="nav-txt" href="../Portfolio/CV.html">CV</a>
+            <a class="nav-txt goToSection">Home</a>
+            <a href="#about" class="nav-txt goToSection">About</a>
+            <a href="#projects" class="nav-txt goToSection">Projects</a>
+            <a class="nav-txt" href="CV.html">CV</a>
         </div>
     </div>
 
     <!----------------------------------------------------------->
     <!-- <div class="accent-bar"></div> -->
-    <div class="about-cont">
-        <h2>About</h2>
-        <div class="about-img">
+    <section id="about">
+        <div class="about-cont">
+            <h2>About</h2>
+            <div class="about-img">
+            </div>
+
+            <div class="about-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis officiis,
+                vitae
+                dolores nostrum nisi sit consequatur doloribus! Hic illum tempora aspernatur! Voluptas, repellendus
+                alias.
+                Architecto consequatur veniam dolor quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Deleniti, perferendis itaque? Pariatur ullam quas consequatur, impedit sit natus obcaecati incidunt
+                cumque
+                odio nulla totam iusto minima. Quos tenetur eligendi excepturi?Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quaerat eligendi maiores aliquid repellat placeat numquam iusto laboriosam facilis
+                nobis,
+                rem ut distinctio exercitationem corporis! Cum cumque aliquid repudiandae pariatur magni?</div>
         </div>
-
-        <div class="about-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis officiis,
-            vitae
-            dolores nostrum nisi sit consequatur doloribus! Hic illum tempora aspernatur! Voluptas, repellendus
-            alias.
-            Architecto consequatur veniam dolor quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Deleniti, perferendis itaque? Pariatur ullam quas consequatur, impedit sit natus obcaecati incidunt
-            cumque
-            odio nulla totam iusto minima. Quos tenetur eligendi excepturi?Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Quaerat eligendi maiores aliquid repellat placeat numquam iusto laboriosam facilis
-            nobis,
-            rem ut distinctio exercitationem corporis! Cum cumque aliquid repudiandae pariatur magni?</div>
-
-    </div>
+    </section>
     <!----------------------------------------------------------->
+    <section id="projects">
+        <h2 class="rocket">Projects</h2>
+        <div class="project-cont ">
+            <div class="project">
 
-    <h2 class="rocket">Projects</h2>
-    <div class="project-cont ">
-        <div class="project">
+                <h2>Title</h2>
+                <div class="project-img"></div>
+                <div class="project-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptate,
+                    quod
+                    ea ad repellat perferendis magni quos recusandae numquam perspiciatis cupiditate nam similique
+                    quaerat
+                    aut ipsum..</div>
+            </div>
 
-            <h2>Title</h2>
-            <div class="project-img"></div>
-            <div class="project-descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptate,
-                quod
-                ea ad repellat perferendis magni quos recusandae numquam perspiciatis cupiditate nam similique
-                quaerat
-                aut ipsum..</div>
+            <div class="project">
+
+                <h2>Title</h2>
+                <div class="project-img"></div>
+                <div class="project-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et impedit
+                    laboriosam
+                    laudantium eius corporis sapiente unde inventore rerum quo architecto culpa non ipsam, cumque alias
+                    modi
+                    explicabo!</div>
+            </div>
+
+            <div class="project">
+
+                <h2>Title</h2>
+                <div class="project-img"></div>
+                <div class="project-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio at
+                    eum
+                    culpa? Esse quia autem dignissimos voluptatibus quam a pariatur? Illum vero animi, perferendis omnis
+                    sit
+                    architecto! Animi, maxime.</div>
+            </div>
         </div>
-
-        <div class="project">
-
-            <h2>Title</h2>
-            <div class="project-img"></div>
-            <div class="project-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et impedit
-                laboriosam
-                laudantium eius corporis sapiente unde inventore rerum quo architecto culpa non ipsam, cumque alias
-                modi
-                explicabo!</div>
-        </div>
-
-        <div class="project">
-
-            <h2>Title</h2>
-            <div class="project-img"></div>
-            <div class="project-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio at
-                eum
-                culpa? Esse quia autem dignissimos voluptatibus quam a pariatur? Illum vero animi, perferendis omnis
-                sit
-                architecto! Animi, maxime.</div>
-        </div>
-    </div>
+    </section>
     <!----------------------------------------------------------->
     <footer>
         <div class="footer-bar">
@@ -106,7 +113,13 @@
                 <a class="iconify footer-items" data-icon="fa-solid:envelope" data-inline="false"></a></div>
         </div>
     </footer>
-
+    <script>
+        $(document).on('click', '.goToSection', function (e) {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('data-href')).offset().top
+            }, 700); //set second as required
+        })
+    </script>
 </body>
 <script>
 

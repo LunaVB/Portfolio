@@ -1,6 +1,4 @@
-Check out progress here: 
-[Home](https://lunavb.github.io/Portfolio/home.html) + 
-[CV](https://lunavb.github.io/Portfolio/CV.html)
+Check out progress [here](https://lunavb.github.io/Portfolio/home.html)
 
 To do list : 
 <li><s>design</s>

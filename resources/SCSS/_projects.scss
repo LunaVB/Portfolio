@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 90%;
-    color: rgb(164, 166, 173);
+    color: $light-grey;
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 5vh;
@@ -34,8 +34,7 @@
 
     &:hover {
         transition: 0.3s;
-        color: black;
-        background-color: rgba(155, 139, 139, 0.767);
+        color: $white;
     }
 }
 

@@ -1,18 +1,14 @@
+@import "variables";
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #000000;
+    background-color: $black;
     margin: 0px;
     padding: 0px;
-    // overflow-x: hidden;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-.highlight {
-    background-color: rgb(0, 0, 0);
-    color: $blue;
 }
 
 a {
@@ -20,18 +16,11 @@ a {
     color: white;
 }
 
-.black {
-    color: black;
-}
-
-.blue-bg {
-    background-color: #2F4D6F;
-}
-
+// Just for testing
 .overflow-check {
     height: 200px;
     width: 100%;
-    background-color: red;
+    background-color: $red;
 }
 
 // ---------------------------------------
@@ -42,7 +31,7 @@ h2 {
     text-align: center;
     font-size: 35px;
     width: 100%;
-    color: #CCCFE0;
+    color: $txt-white;
 
     &:hover {
         transition: 0.3s;

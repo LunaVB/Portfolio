@@ -1,30 +1,25 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #000000;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.highlight {
-  background-color: black;
-  color: #456d92;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .black {
   color: black;
 }
 
 .blue-bg {
-  background-color: #2F4D6F;
+  background-color: #456d92;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .overflow-check {
@@ -125,7 +120,7 @@ cv-title {
   height: 20px;
   width: 75%;
   padding-top: 20px;
-  color: #BEC1D2;
+  color: #CCCFE0;
 }
 
 .highlight {
@@ -280,8 +275,7 @@ cv-title {
 }
 .project-descr:hover {
   transition: 0.3s;
-  color: black;
-  background-color: rgba(155, 139, 139, 0.767);
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -516,6 +510,13 @@ cv-title {
     -webkit-transform: none;
     transform: none;
   }
+}
+.black {
+  color: black;
+}
+
+.blue-bg {
+  background-color: #456d92;
 }
 
 /*# sourceMappingURL=main.css.map */

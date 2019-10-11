@@ -1,1 +1,16 @@
+// Color variables
 $blue:rgb(69, 109, 146);
+$black:black;
+$red:red;
+$white:white;
+$txt-white:#CCCFE0;
+$light-grey:rgb(164, 166, 173);
+
+// Just some color classes
+.black {
+    color: $black;
+}
+
+.blue-bg {
+    background-color: $blue;
+}

@@ -21,15 +21,15 @@
     height: 20px;
     width: 75%;
     padding-top: 20px;
-    color: #BEC1D2;
+    color: $txt-white;
 }
 
 .highlight {
-    background-color: rgb(0, 0, 0);
+    background-color: $black;
     color: $blue;
 }
 
-// --------------------------------------------------------------------BG MOBILE VIEW
+// --------------------------------------------------------------------Media Queries
 @media only screen and (min-width: 1920px) {
     .bg-txt {
         font-size: 50px;
@@ -49,7 +49,7 @@
     width: 100%;
     height: 100%;
     margin-top: 25vh;
-    color: white;
+    color: $white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -63,7 +63,7 @@
 
     &:hover {
         transition: 0.3s;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
     }
 }
 

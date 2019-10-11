@@ -1,5 +1,5 @@
 <h2>Check out progress</h2> 
-[here](https://lunavb.github.io/Portfolio/home.html)
+https://lunavb.github.io/Portfolio/home.html
 
 <h2>Road map</h2>
 <li> Fix links

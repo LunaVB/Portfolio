@@ -163,17 +163,11 @@ cv-title {
 
 .nav-txt {
   font-size: 25px;
-  height: 1px;
   font-family: "Josefin Sans", serif;
 }
 .nav-txt:hover {
   transition: 0.3s;
   color: #456d92;
-}
-
-.goToSection {
-  height: 1px;
-  width: 1px;
 }
 
 @media only screen and (min-width: 1920px) {

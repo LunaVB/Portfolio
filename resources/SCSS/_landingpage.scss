@@ -59,18 +59,12 @@
 
 .nav-txt {
     font-size: 25px;
-    height: 1px;
     font-family: 'Josefin Sans', serif;
 
     &:hover {
         transition: 0.3s;
         color: $blue;
     }
-}
-
-.goToSection {
-    height: 1px;
-    width: 1px;
 }
 
 // --------------------------------------------------------------------Media Queries

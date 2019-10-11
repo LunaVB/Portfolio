@@ -1,6 +1,6 @@
 .txt-cont {
     height: 60%;
-    width: 60%;
+    width: auto;
     padding-left: 20vw;
     padding-right: 20vw;
     padding-bottom: 5vh;
@@ -13,7 +13,7 @@
 
 .txt-img {
     height: 60%;
-    width: 60vw;
+    width: 55vw;
     margin-left: 20vw;
     margin-right: 20vw;
     margin-bottom: 5%;
@@ -37,6 +37,7 @@ cv-title {
 }
 
 .highlight-cv {
+    color: white;
     background-color: #2F4D6F;
 }
 

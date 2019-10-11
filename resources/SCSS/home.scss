@@ -26,6 +26,14 @@ a {
 // ---------------------------------------
 
 // ---------------------------------------
+h1 {
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    color: $txt-white;
+}
+
 h2 {
     font-family: 'Josefin Slab', serif;
     text-align: center;
@@ -35,5 +43,6 @@ h2 {
 
     &:hover {
         transition: 0.3s;
+        color: $blue;
     }
 }

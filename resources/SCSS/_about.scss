@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 5vh;
     padding-bottom: 10vh;
     height: auto;
@@ -22,7 +22,7 @@
     background-position: center center;
     background-size: contain;
     height: auto;
-    width: 30%;
+    width: 20%;
     margin-left: 2vw;
     margin-right: 2vw;
     margin-top: 2vh;
@@ -30,9 +30,10 @@
 }
 
 .about-txt {
+    text-align: center;
     height: auto;
-    width: 50%;
-    font-size: 25px;
+    width: 40%;
+    font-size: 2em;
     padding-right: 1vw;
     padding-left: 1vw;
     padding-top: 1vh;
@@ -46,8 +47,10 @@
     }
 
     .about-txt {
+        width: 80%;
         text-align: center;
         margin-bottom: 5vh;
+        font-size: 1.5em;
     }
 }
 
@@ -58,7 +61,7 @@
     }
 
     .about-txt {
-        font-size: 30px;
+        font-size: 2em;
     }
 }
 
@@ -68,6 +71,6 @@
     }
 
     .about-txt {
-        font-size: 40px;
+        font-size: 2.5em;
     }
 }

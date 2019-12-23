@@ -1,5 +1,5 @@
 .black {
-  color: black;
+  color: #000033;
 }
 
 .blue-bg {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #000033;
   margin: 0px;
   padding: 0px;
   font-family: "Josefin Sans", sans-serif;
@@ -19,7 +19,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #CCCFE0;
 }
 
 .overflow-check {
@@ -43,10 +43,11 @@ h2 {
   width: 100%;
   color: #CCCFE0;
 }
-h2:hover {
+
+/* h2:hover {
   transition: 0.3s;
   color: #456d92;
-}
+} */
 
 .txt-cont {
   height: 60%;
@@ -59,6 +60,7 @@ h2:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  color: #CCCFE0;
 }
 
 .txt-img {
@@ -96,16 +98,19 @@ cv-title {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 1920px) {
   a {
     font-size: 25px;
   }
 }
+
 @media only screen and (min-width: 2400px) {
   a {
     font-size: 40px;
   }
 }
+
 .top-bg {
   background-image: url(../images/BG2.jpg);
   background-repeat: no-repeat;
@@ -133,7 +138,6 @@ cv-title {
 }
 
 .highlight {
-  background-color: black;
   color: #456d92;
 }
 
@@ -143,12 +147,14 @@ cv-title {
     margin-bottom: 30px;
   }
 }
+
 @media only screen and (min-width: 2400px) {
   .bg-txt {
     font-size: 3em;
     margin-bottom: 30px;
   }
 }
+
 .nav {
   width: 100%;
   height: 15vh;
@@ -165,6 +171,7 @@ cv-title {
   font-size: 2em;
   font-family: "Josefin Sans", serif;
 }
+
 .nav-txt:hover {
   transition: 0.3s;
   color: #456d92;
@@ -175,16 +182,19 @@ cv-title {
     font-size: 1em;
   }
 }
+
 @media only screen and (min-width: 1920px) {
   .nav-txt {
     font-size: 2.5em;
   }
 }
+
 @media only screen and (min-width: 2400px) {
   .nav-txt {
     font-size: 3em;
   }
 }
+
 .about-cont {
   display: flex;
   flex-direction: row;
@@ -204,12 +214,11 @@ cv-title {
 }
 
 .about-img {
-  background-image: url(../images/moon.png);
+  background-image: url(../images/aboutme.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: contain;
-  height: auto;
-  width: 20%;
+  height: 50vh;
+  width: 25vw;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-top: 2vh;
@@ -220,11 +229,16 @@ cv-title {
   text-align: center;
   height: auto;
   width: 40%;
-  font-size: 2em;
+  font-size: 1.8em;
   padding-right: 1vw;
   padding-left: 1vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
+  /* margin-top: 100px; */
+}
+
+.about-highlight {
+  color: #192d3f;
 }
 
 @media only screen and (max-width: 768px) {
@@ -239,6 +253,7 @@ cv-title {
     font-size: 1.5em;
   }
 }
+
 @media only screen and (min-width: 1920px) {
   h2 {
     font-size: 50px;
@@ -248,6 +263,7 @@ cv-title {
     font-size: 2em;
   }
 }
+
 @media only screen and (min-width: 2400px) {
   h2 {
     font-size: 60px;
@@ -257,10 +273,12 @@ cv-title {
     font-size: 2.5em;
   }
 }
+
 .project-cont {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
   width: 90%;
   color: #a4a6ad;
   margin-left: 5%;
@@ -269,31 +287,32 @@ cv-title {
 }
 
 .project {
-  width: 100%;
+  width: 80%;
   margin: 10px;
 }
 
 .project-img {
+  background-image: url(../images/RPG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 40vh;
+  height: 80vh;
   border: 1px solid #456d92;
   margin-bottom: 2%;
-}
-.project-img:hover {
-  transition: 0.3s;
-  background-color: #456d92;
 }
 
 .project-descr {
   width: 100%;
   height: auto;
   font-size: 25px;
+  padding-top: 10px;
   text-align: center;
 }
-.project-descr:hover {
+
+/* .project-descr:hover {
   transition: 0.3s;
   color: white;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .project-cont {
@@ -317,16 +336,19 @@ cv-title {
     font-size: 1.5em;
   }
 }
+
 @media only screen and (min-width: 1920px) {
   .project-descr {
     font-size: 2em;
   }
 }
+
 @media only screen and (min-width: 2400px) {
   .project-descr {
     font-size: 2.5em;
   }
 }
+
 .footer-bar {
   height: 5vh;
   width: 90%;
@@ -350,6 +372,7 @@ cv-title {
   margin-right: 10vw;
   color: #BEC1D2;
 }
+
 .footer-items:hover {
   transition: 0.3s;
   color: white;
@@ -368,6 +391,7 @@ cv-title {
     height: 3vh;
   }
 }
+
 @media only screen and (min-width: 1920px) {
   .footer-bar {
     height: 5vh;
@@ -379,6 +403,7 @@ cv-title {
     height: 35px;
   }
 }
+
 @media only screen and (min-width: 2400px) {
   .footer-bar {
     height: 5vh;
@@ -390,6 +415,40 @@ cv-title {
     height: 50px;
   }
 }
+
+.container {
+  width: 100%;
+  background-color: #CCCFE0;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #CCCFE0;
+}
+
+.html {
+  width: 90%;
+  background-color: rgb(101, 226, 105);
+}
+
+.css {
+  width: 85%;
+  background-color: rgb(59, 123, 175);
+}
+
+.sass {
+  width: 80%;
+  background-color: #c540d6;
+}
+
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+
+
 /*=== Trigger  ===*/
 .animate {
   -webkit-animation-duration: 1.5s;
@@ -454,24 +513,28 @@ cv-title {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -482,18 +545,22 @@ cv-title {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -511,26 +578,30 @@ cv-title {
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 @keyframes fadeInUpBig {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 2000px, 0);
     transform: translate3d(0, 2000px, 0);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
   }
 }
+
 .black {
-  color: black;
+  color: #CCCFE0;
 }
 
 .blue-bg {

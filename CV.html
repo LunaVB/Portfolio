@@ -16,7 +16,7 @@
     <!----------------------------------------------------------->
     <div class="top-bg">
         <div class="bg-txt animate fadeInUp one">Hi, I'm <span class="highlight">Luna</span></div>
-        <div class="bg-txt animate fadeInUp one">I'm a junior Web Dev at <span class="highlight">BeCode</span></div>
+        <div class="bg-txt animate fadeInUp one">I'm a <span class="highlight">junior Web Dev </span>from Hasselt</div>
         <img class="animate fadeIn two ship" src="./resources/images/shipsmall.png"></img>
         <div class="nav">
             <a class="nav-txt" href="home.html">Home</a>
@@ -29,48 +29,67 @@
     <section id="about2">
         <div class="txt-cont blue-bg">
             <h2 class="cv-title">About</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos
-                debitis
-                molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
-                similique corporis. Recusandae!</p>
+            Hi! My name is Luna, I'm a junior web developer who's just completed her Becode
+            education. I'm proficient in HTML, CSS, Sass and Javascript. I've
+            learned many valuably skills such as <ul>
+                <li>working both individually or in team</li>
+                <li>time management</li>
+                <li>drive to improve and stay up-to-date</li>
+                <li>handling stress well</li>
+            </ul>
+            <ul>
+                <p class="about-highlight">Feel free to contact me via <a
+                        href="https://www.linkedin.com/in/lunavb/">LinkedIn</a>
+                    , by <a href="mailto: Vanbockryck.Luna@gmail.com">mail</a> or take a look at my <a
+                        href="https://github.com/LunaVB">github</a> account</p>
+            </ul>
         </div>
     </section>
     <!----------------------------------------------------------->
     <section id="languages">
         <div class="txt-cont">
             <h2 class="cv-title">Languages</h2>
-            <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tenetur quidem eius fugit quos
-                debitis
-                molestias voluptas vel sequi quisquam, nobis optio cupiditate, cumque reprehenderit iure repudiandae
-                similique corporis. Recusandae!</a>
+            <p>HTML5</p>
+            <div class="container">
+                <div class="skills html"></div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css"></div>
+            </div>
+            <p>SASS</p>
+            <div class="container">
+                <div class="skills sass"></div>
+            </div>
+            <p>JS</p>
+            <div class="container">
+                <div class="skills js"></div>
+            </div>
         </div>
     </section>
     <section id="skills">
         <div class="txt-cont">
             <h2 class="cv-title">Skills</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos dolorum perspiciatis ab quaerat? Eum velit
-                eos
-                facilis maxime, mollitia perferendis, perspiciatis ea dicta architecto voluptate assumenda qui eligendi
-                nisi
-                reprehenderit.</p>
+            <ul>
+                <li>stress resitant</li>
+                <li>adaptable</li>
+                <li>driven to improve and stay up-to-date</li>
+                <li>motivated and trustworthy</li>
+                <li>fluent in Dutch and English, intermediate proficiency in French</li>
+            </ul>
         </div>
     </section>
-    <div class="lets-connect">
+    <!-- <div class="lets-connect">
         <span class="highlight-cv">Let's</span>
         <span class="highlight-cv">connect;</span>
-
-
-    </div>
+    </div> -->
     <!----------------------------------------------------------->
     <footer>
         <div class="footer-bar">
             <div class="footer-content">
                 <a class="iconify footer-items" data-icon="fa:github" data-inline="false"
                     href="https://github.com/LunaVB"></a>
-                <a class="iconify footer-items" data-icon="brandico:linkedin-rect" data-inline="false"
-                    href="https://www.linkedin.com/in/lunavb/"></a>
-                <a class="iconify footer-items" data-icon="fa-solid:envelope" data-inline="false"></a></div>
-        </div>
+            </div>
     </footer>
 
 </body>
@@ -78,7 +97,7 @@
     $(document).on('click', '.goToSection', function (e) {
         $('html, body').animate({
             scrollTop: $($(this).attr('data-href')).offset().top
-        }, 700); //set second as required
+        }, 700);
     })
 </script>
 

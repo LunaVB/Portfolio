@@ -4,8 +4,14 @@
 // ---- Home
 @import "landingpage";
 @import "about";
+@import "menu";
 @import "projects";
 @import "footer";
 // ----
 @import "animations";
 @import "variables";
+
+body {
+    margin: 0;
+    padding: 0;
+}

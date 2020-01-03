@@ -16,12 +16,6 @@ a {
     color: white;
 }
 
-// Just for testing
-.overflow-check {
-    height: 200px;
-    width: 100%;
-    background-color: $red;
-}
 
 // ---------------------------------------
 
@@ -37,12 +31,7 @@ h1 {
 h2 {
     font-family: 'Josefin Slab', serif;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     width: 100%;
     color: $txt-white;
-
-    &:hover {
-        transition: 0.3s;
-        color: $blue;
-    }
 }

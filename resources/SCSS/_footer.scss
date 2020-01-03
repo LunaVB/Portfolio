@@ -1,67 +1,23 @@
-.footer-bar {
-    height: 5vh;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: $blue;
-}
-
-.footer-content {
+.social-footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-}
+    background-color: rgb(69, 109, 146);
 
-.footer-items {
-    height: 100%;
-    min-width: 30px;
-    margin-top: 10px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    color: #BEC1D2;
-
-    &:hover {
-        transition: 0.3s;
-        color: $white;
-    }
-}
-
-// --------------------------------------------------------------------Media Queries
-@media only screen and (max-width: 768px) {
-    .footer-bar {
-        height: 5vh;
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+    li {
+        list-style: none;
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 
-    .footer-items {
+    .fa {
         margin-top: 1vh;
-        height: 3vh;
-    }
-}
+        font-size: 2rem;
+        color: white;
 
-@media only screen and (min-width: 1920px) {
-    .footer-bar {
-        height: 5vh;
-    }
-
-    .footer-items {
-        margin-top: 10px;
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media only screen and (min-width: 2400px) {
-    .footer-bar {
-        height: 5vh;
+        &:hover {
+            color: darken(gray, 25%);
+            transition: color 0.3s ease-in;
+        }
     }
 
-    .footer-items {
-        margin-top: 10px;
-        width: 50px;
-        height: 50px;
-    }
 }

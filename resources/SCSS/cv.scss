@@ -11,6 +11,12 @@
     justify-content: center;
 }
 
+.about-highlight {
+    a {
+        font-size: 1em;
+    }
+}
+
 .txt-img {
     height: 60%;
     width: 55vw;
@@ -41,11 +47,57 @@ cv-title {
     background-color: #2F4D6F;
 }
 
+p,
+li {
+    color: #BEC1D2;
+    text-align: center;
+}
+
+.container-cv {
+    width: 100%;
+    background-color: #CCCFE0;
+
+    .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #CCCFE0;
+    }
+
+    .html {
+        width: 90%;
+        background-color: rgb(101, 226, 105);
+    }
+
+    .css {
+        width: 85%;
+        background-color: rgb(59, 123, 175);
+    }
+
+    .sass {
+        width: 80%;
+        background-color: #c540d6;
+    }
+
+    .js {
+        width: 65%;
+        background-color: #f44336;
+    }
+}
+
+
+
+
+
 // --------------------------------------------------------------------Media Queries
 
 @media only screen and (max-width: 768px) {
     a {
         font-size: 20px;
+    }
+
+    .txt-cont {
+        text-align: center;
     }
 }
 

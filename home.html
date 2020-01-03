@@ -6,108 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Portfolio, BeCode, Programming Junior Webdesign">
-    <script src=" https://code.iconify.design/1/1.0.3/iconify.min.js"> </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/CSS/main.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-
-    <!----------------------------------------------------------->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li> <a class="nav-txt goToSection">Home</a></li>
+                <li><a href="#about" class="nav-txt ">About</a></li>
+                <li><a href="#projects" class="nav-txt ">Projects</a></li>
+                <li><a class="nav-txt" href="CV.html">CV</a></li>
+            </ul>
+    </nav>
     <div class="top-bg">
         <div class="bg-txt animate fadeInUp one">Hi, I'm <span class="highlight">Luna</span></div>
-        <div class="bg-txt animate fadeInUp one">I'm a <span class="highlight">junior Web Dev </span>from Hasselt</div>
-        <img class="animate fadeIn two ship" alt="small space ship" src="./resources/images/shipsmall.png"></img>
-        <div class="nav">
-            <a class="nav-txt goToSection">Home</a>
-            <a href="#about" class="nav-txt goToSection">About</a>
-            <a href="#projects" class="nav-txt goToSection">Projects</a>
-            <a class="nav-txt" href="CV.html">CV</a>
-        </div>
+        <div class="bg-txt animate fadeInUp one">I'm a <span class="highlight">junior Web Dev </span>from
+            Hasselt</div>
+        <img class="animate fadeIn two ship center" alt="small space ship" src="./resources/images/shipsmall.png"></img>
     </div>
-
-    <!----------------------------------------------------------->
-    <!-- <div class="accent-bar"></div> -->
     <section id="about">
         <div class="about-cont">
             <h1>About</h1>
             <div class="about-img">
             </div>
-            <div class="about-txt"> Hi! My name is Luna, I'm a junior web developer who's just completed her Becode
+            <div class="about-txt"> Hi! My name is Luna, I'm a junior web developer who's just completed her
+                Becode
                 education. I'm proficient in HTML, CSS, Sass and Javascript. I've
                 learned many valuably skills such as <ul>
-                    <li>working both individually or in team</li>
-                    <li>time management</li>
-                    <li>drive to improve and stay up-to-date</li>
-                    <li>handling stress well</li>
+                    <li>resistance to stress</li>
+                    <li>working well individually and in team</li>
+                    <li>being adaptable</li>
+                    <li>being driven to improve and stay up-to-date</li>
+                    <li>baing motivated and trustworthy</li>
+                    <li>fluency in Dutch and English, intermediate proficiency in French</li>
                 </ul>
                 <ul>
                     <p class="about-highlight">Feel free to contact me via <a
                             href="https://www.linkedin.com/in/lunavb/">LinkedIn</a>
                         or <a href="mailto: Vanbockryck.Luna@gmail.com">email</a></p>
                 </ul>
-
                 </ul>
             </div>
         </div>
     </section>
-    <!----------------------------------------------------------->
     <section id="projects">
-        <h2 class="rocket">Personal projects</h2>
-        <div class="project-cont ">
+        <h2 class="rocket">Personal project(s)</h2>
+        <div class="project-cont">
             <div class="project">
-
-                <h2>RPG: SMT-Persona</h2>
-                <div class="project-img"></div>
-                <div class="project-descr">An RPG based on SMT:Persona's combat system written
-                    completely in vanilla Javascript.</div>
+                <a href="https://lunavb.github.io/portfolio-site-1/main.html">
+                    <img class="project-img" src="./resources/images/port-site.png" </a> </div> <div
+                        class="project-descr">A fake wedding bouquet site written in HTML5, SASS and
+                    JavaScript.
             </div>
-            <!-- 
-            <div class="project">
-
-                <h2>Title</h2>
-                <div class="project-img"></div>
-                <div class="project-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et impedit
-                    laboriosam
-                    laudantium eius corporis sapiente unde inventore rerum quo architecto culpa non ipsam, cumque alias
-                    modi
-                    explicabo!</div>
-            </div>
-
-            <div class="project">
-
-                <h2>Title</h2>
-                <div class="project-img"></div>
-                <div class="project-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odio at
-                    eum
-                    culpa? Esse quia autem dignissimos voluptatibus quam a pariatur? Illum vero animi, perferendis omnis
-                    sit
-                    architecto! Animi, maxime.</div>
-            </div> -->
+        </div>
         </div>
     </section>
-    <!----------------------------------------------------------->
-    <footer>
-        <div class="footer-bar">
-            <div class="footer-content">
-                <a class="iconify footer-items" data-icon="fa:github" data-inline="false"
-                    href="https://github.com/LunaVB"></a>
-            </div>
-    </footer>
-    <script>
-        $(document).on('click', '.goToSection', function (e) {
-            $('html, body').animate({
-                scrollTop: $($(this).attr('data-href')).offset().top
-            }, 700); //set second as required
-        })
-    </script>
 </body>
+<footer class="social-footer">
+    <li><a href="https://github.com/LunaVB"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/lunavb/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a href="mailto: Vanbockryck.Luna@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+</footer>
 <script>
 
 </script>

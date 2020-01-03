@@ -6,36 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Portfolio, BeCode, Programming Junior Webdesign">
-    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/CSS/main.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <!----------------------------------------------------------->
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li> <a class="nav-txt" href="home.html">Home</a></li>
+                <li><a href="#about" class="nav-txt ">About</a></li>
+                <li><a href="#projects" class="nav-txt ">Projects</a></li>
+                <li><a class="nav-txt">CV</a></li>
+            </ul>
+    </nav>
     <div class="top-bg">
         <div class="bg-txt animate fadeInUp one">Hi, I'm <span class="highlight">Luna</span></div>
-        <div class="bg-txt animate fadeInUp one">I'm a <span class="highlight">junior Web Dev </span>from Hasselt</div>
-        <img class="animate fadeIn two ship" src="./resources/images/shipsmall.png"></img>
-        <div class="nav">
-            <a class="nav-txt" href="home.html">Home</a>
-            <a href="#about2" class="nav-txt goToSection">About</a>
-            <a href="#languages" class="nav-txt goToSection">Languages</a>
-            <a href="#skills" class="nav-txt goToSection">Skills</a>
-        </div>
+        <div class="bg-txt animate fadeInUp one">I'm a <span class="highlight">junior Web Dev </span>from
+            Hasselt</div>
+        <img class="animate fadeIn two ship center" alt="small space ship" src="./resources/images/shipsmall.png"></img>
     </div>
-    <!----------------------------------------------------------->
     <section id="about2">
         <div class="txt-cont blue-bg">
             <h2 class="cv-title">About</h2>
             Hi! My name is Luna, I'm a junior web developer who's just completed her Becode
             education. I'm proficient in HTML, CSS, Sass and Javascript. I've
             learned many valuably skills such as <ul>
-                <li>working both individually or in team</li>
-                <li>time management</li>
-                <li>drive to improve and stay up-to-date</li>
-                <li>handling stress well</li>
+                <li>resistance to stress</li>
+                <li>working well individually and in team</li>
+                <li>being adaptable</li>
+                <li>being driven to improve and stay up-to-date</li>
+                <li>baing motivated and trustworthy</li>
+                <li>fluency in Dutch and English, intermediate proficiency in French</li>
             </ul>
             <ul>
                 <p class="about-highlight">Feel free to contact me via <a
@@ -45,24 +53,23 @@
             </ul>
         </div>
     </section>
-    <!----------------------------------------------------------->
     <section id="languages">
         <div class="txt-cont">
             <h2 class="cv-title">Languages</h2>
             <p>HTML5</p>
-            <div class="container">
+            <div class="container-cv">
                 <div class="skills html"></div>
             </div>
             <p>CSS</p>
-            <div class="container">
+            <div class="container-cv">
                 <div class="skills css"></div>
             </div>
             <p>SASS</p>
-            <div class="container">
+            <div class="container-cv">
                 <div class="skills sass"></div>
             </div>
             <p>JS</p>
-            <div class="container">
+            <div class="container-cv">
                 <div class="skills js"></div>
             </div>
         </div>
@@ -71,26 +78,19 @@
         <div class="txt-cont">
             <h2 class="cv-title">Skills</h2>
             <ul>
-                <li>stress resitant</li>
+                <li>stress resistant</li>
                 <li>works well individually and in team</li>
                 <li>adaptable</li>
                 <li>driven to improve and stay up-to-date</li>
                 <li>motivated and trustworthy</li>
-                <li>fluent in Dutch and English, intermediate proficiency in French</li>
+                <li>fluent in Dutch and English, intermediate proficiency in French.</li>
             </ul>
         </div>
     </section>
-    <!-- <div class="lets-connect">
-        <span class="highlight-cv">Let's</span>
-        <span class="highlight-cv">connect;</span>
-    </div> -->
-    <!----------------------------------------------------------->
-    <footer>
-        <div class="footer-bar">
-            <div class="footer-content">
-                <a class="iconify footer-items" data-icon="fa:github" data-inline="false"
-                    href="https://github.com/LunaVB"></a>
-            </div>
+    <footer class="social-footer">
+        <li><a href="https://github.com/LunaVB"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/lunavb/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="mailto: Vanbockryck.Luna@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
     </footer>
 
 </body>

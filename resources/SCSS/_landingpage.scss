@@ -3,15 +3,23 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
+    padding-top: 60px;
+    height: 95vh;
     width: 100%;
 }
 
 .ship {
-    max-height: 45%;
-    max-width: 45%;
-    margin-left: 49vw;
-    margin-top: 10vh;
+    margin-bottom: 50vh;
+}
+
+.center {
+    width: 50px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -200px;
 }
 
 .bg-txt {
@@ -25,7 +33,6 @@
 }
 
 .highlight {
-    background-color: $black;
     color: $blue;
 }
 
@@ -63,7 +70,7 @@
 
     &:hover {
         transition: 0.3s;
-        color: $blue;
+        color: rgb(31, 31, 31);
     }
 }
 

@@ -17,7 +17,7 @@
 }
 
 .about-img {
-    background-image: url(../images/moon.png);
+    background-image: url(../images/aboutme.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -29,15 +29,21 @@
     margin-bottom: 2vh;
 }
 
+
 .about-txt {
     text-align: center;
     height: auto;
     width: 40%;
-    font-size: 2em;
+    font-size: 1.5em;
     padding-right: 1vw;
     padding-left: 1vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
+
+    a {
+        font-size: 1.1em;
+    }
+
 }
 
 // --------------------------------------------------------------------Media Queries
